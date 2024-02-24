@@ -1,0 +1,18 @@
+.hover\:underline-left-to-right {
+  position: relative;
+}
+
+.hover\:underline-left-to-right::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #3182ce; /* Adjust the color as needed */
+  transition: width 0.3s ease;
+}
+
+.hover\:underline-left-to-right:hover::before {
+  width: 100%;
+}
