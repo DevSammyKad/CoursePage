@@ -4,7 +4,7 @@ import feedBack from '../json/feedBack.json';
 
 const FeedBack = () => {
   return (
-    <div className="mx-auto w-4/5 my-40 ">
+    <div className="mx-auto w-4/5 my-40 max-md:hidden ">
       <div className="text-start mt-20">
         <h5 className="bg-blue-100 text-blue-500 text-base font-semibold px-6 py-2  inline-block rounded-xl  ">
           LEARNERS FEEDBACK
@@ -19,12 +19,12 @@ const FeedBack = () => {
             Learning communicate to global world and <br /> build a bright
             future with our YPSILON.
           </p>
-          <button className="px-6 py-4 mt-10 text-white text-lg font-semibold bg-blue-400 hover:bg-blue-400 rounded-xl ">
+          {/* <button className="px-6 py-4 mt-10 text-white text-lg font-semibold bg-blue-400 hover:bg-blue-400 rounded-xl ">
             Contact Us
-          </button>
+          </button> */}
         </div>
 
-        <div className="flex absolute -top-32 left-80 gap-10 p-10 overflow-x-auto ">
+        <div className="flex absolute -top-32 left-80 gap-10 p-10 overflow-x-hidden ">
           {feedBack.map((item, id) => (
             <div
               key={id}

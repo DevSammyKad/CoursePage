@@ -7,11 +7,13 @@ import WhyUs from '../components/WhyUs';
 import PopularCourses from '../components/PopularCourses';
 import FeedBack from '../components/FeedBack';
 import Cta from '../components/Cta';
+import Hero2 from '../components/Hero2';
 
 const Home = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
+      <Hero2 />
       <WhyUs />
       <PopularCourses />
       <FeedBack />

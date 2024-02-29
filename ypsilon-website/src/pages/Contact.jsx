@@ -12,7 +12,7 @@ const Contact = () => {
             </h5>
           </div>
           <h1 className="text-center mx-auto leading-tight text-black text-[53px] w-[40%]">
-            Histudy Course Contact can join with us.
+            YPSILON Course Contact can join with us.
           </h1>
           <div className="grid grid-cols-3 space-x-20 mt-20 ">
             <div className=" flex justify-start items-center bg-white shadow-xl rounded-2xl p-10 space-x-10 ">

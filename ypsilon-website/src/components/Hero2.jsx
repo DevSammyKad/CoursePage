@@ -2,10 +2,10 @@ import React from 'react';
 import Banner from '../assets/images/banner-01.webp';
 import CourseCards from './CourseCards';
 import CourseData from '../json/course.json';
-const Hero = () => {
+const Hero2 = () => {
   return (
-    <div className="bg-gradient-to-b from-white to-indigo-100 pb-20 relative">
-      <div className="hidden absolute -bottom-60 left-0 w-full h-full z-20 max-lg:hidden">
+    <div className="bg-gradient-to-b from-blue-100 to-blue-600 pb-20 relative">
+      <div className=" absolute -bottom-60 left-0 w-full h-full z-20 max-xl:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -31,9 +31,9 @@ const Hero = () => {
         </svg>
       </div>
       <div className="w-4/5 mx-auto relative">
-        <div className="grid grid-cols-3 space-y-10 ">
-          <div className="col-span-3 lg:col-span-2 ">
-            <h1 className="max-w-max text-5xl leading-none mt-40">
+        <div className="grid grid-cols-3 max-xl:space-y-10">
+          <div className="col-span-1 max-md:col-span-3 max-xl:col-span-3">
+            <h1 className="max-w-lg text-5xl leading-none mt-40">
               Build The Skills <br /> To&nbsp;
               <span
                 style={{
@@ -55,12 +55,12 @@ const Hero = () => {
               View All Courses
             </button>
           </div>
-          {/* <div className="col-span-1 relative">
-            <div className="absolute top-28 z- left-2 max-lg:hidden">
+          <div className=" max-xl:hidden col-span-1  relative">
+            <div className="absolute top-28 z- left-2">
               <img src={Banner} alt="" width={550} />
             </div>
-          </div> */}
-          <div className="col-span-3 lg:col-span-1 z-20">
+          </div>
+          <div className="col-span-1 max-md:col-span-3 max-xl:col-span-3 z-20">
             {Array(1)
               .fill()
               .map((_, index) => (
@@ -73,4 +73,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero2;

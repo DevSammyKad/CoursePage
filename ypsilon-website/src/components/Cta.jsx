@@ -5,10 +5,14 @@ const Cta = () => {
   return (
     <div className="bg-gradient-to-r from-red-100 to-blue-200 relative  py-20 my-20">
       <div className="w-4/5 mx-auto flex items-center ">
-        <img src={cartoon} alt="" className="absolute left-20 -top-32" />
-        <div className="ml-96 space-y-10 ">
-          <h1 className="text-5xl max-w-4xl leading-none">
-            Ready to start creating a Educational Website?
+        <img
+          src={cartoon}
+          alt=""
+          className="absolute hidden md:flex  -top-32 -left-10"
+        />
+        <div className="md:ml-96 space-y-10 sm:ml-0  ">
+          <h1 className="text-3xl max-w-4xl leading-none font-mono">
+            Unlock your potential with skills that thrill! 🌟
           </h1>
           <button className=" flex items-center gap-3 px-10 py-4 rounded-lg bg-gradient-to-r from-purple-500  to-blue-500 text-white text-lg font-semibold">
             <svg

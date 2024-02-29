@@ -1,14 +1,15 @@
 import React from 'react';
-import Logo from '../assets/images/Logo.webp';
+import Logo from '../assets/images/Logo.png';
 import { Navlinks } from '../constants/index';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-      <header className="w-full bg-white fixed top-1 z-50 backdrop-blur-lg ">
+      <header className="w-full bg-white z-50 backdrop-blur-lg ">
         <nav className="flex justify-between items-center w-4/5 mx-auto py-5 ">
           <div>
-            <img src={Logo} width={150} alt="" />
+            {/* <img src={Logo} width={250} alt="" /> */}
+            <h1 className="text-blue-500">YPSilon</h1>
           </div>
 
           <ul className="flex flex-1 justify-center items-center gap-10 max-lg:hidden">

@@ -18,3 +18,12 @@ Course Fees
 Timing
 Instructor
 Course review
+
+<!-- 29 FEB 2024 -->
+
+Urgent Need
+
+image (PNG), Name and Instructor Info - 2-3 line about instructor ,
+Real LEARNERS FEEDBACK : 5
+Course Poster
+Email id , Contact no ,location

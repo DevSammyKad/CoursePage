@@ -1,47 +1,56 @@
 import React from 'react';
-import Avatar1 from '../assets/images/Avatar1.png';
+
+import exam from '../assets/images/exam.png';
+import online from '../assets/images/online.webp';
+import paper from '../assets/images/paper.webp';
+import happy from '../assets/images/happy.png';
 
 const WhyUs = () => {
   return (
     <div className="w-4/5 mx-auto">
-      <div className="grid grid-cols-2 space-x-40">
+      <div className="grid grid-cols-1 lg:space-x-40 lg:grid-cols-2">
         <div className="mt-20">
           <div className="grid grid-cols-2 space-x-3 space-y-5">
             <div className="bg-white rounded-xl shadow-xl text-center px-5 py-5">
               <img
-                src={Avatar1}
+                src={happy}
                 alt=""
+                width={120}
                 className="text-center mx-auto rounded-full"
               />
               <h1 className="text-2xl my-2">500+</h1>
-              <h2 className="text-base text-gray-500 ">Learners & counting</h2>
+              <h2 className="text-base text-gray-500 ">Happy Students</h2>
             </div>
             <div className="bg-white rounded-xl shadow-xl text-center px-5 py-5">
               <img
-                src={Avatar1}
+                src={exam}
+                cov
                 alt=""
-                className="text-center mx-auto rounded-full"
+                width={120}
+                className="text-center mx-auto "
               />
               <h1 className="text-2xl my-2">50+</h1>
-              <h2 className="text-base text-gray-500 ">Courses & Video</h2>
+              <h2 className="text-base text-gray-500 ">Mock Tests</h2>
             </div>
             <div className="bg-white rounded-xl shadow-xl text-center px-5 py-5">
               <img
-                src={Avatar1}
+                src={online}
                 alt=""
-                className="text-center mx-auto rounded-full"
+                width={120}
+                className="text-center mx-auto "
               />
               <h1 className="text-2xl my-2">1000+</h1>
-              <h2 className="text-base text-gray-500 ">Certified Students</h2>
+              <h2 className="text-base text-gray-500 ">Video Lectures</h2>
             </div>
             <div className="bg-white rounded-xl shadow-xl text-center px-5 py-5">
               <img
-                src={Avatar1}
+                src={paper}
                 alt=""
-                className="text-center mx-auto rounded-full"
+                width={120}
+                className="text-center mx-auto "
               />
               <h1 className="text-2xl my-2">100+</h1>
-              <h2 className="text-base text-gray-500 ">Registered Enrolls</h2>
+              <h2 className="text-base text-gray-500 ">Practice Papers</h2>
             </div>
           </div>
         </div>
