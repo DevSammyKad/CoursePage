@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cartoon from '../assets/images/cartoon.png';
+import ContactForm from './ContactForm';
 
 const Cta = () => {
+  const [showModal, setshowmodal] = useState(false);
+
+  const closeModal = () => setshowmodal(false);
+
   return (
     <div className="bg-gradient-to-r from-red-100 to-blue-200 relative  py-20 my-20">
       <div className="w-4/5 mx-auto flex items-center ">
@@ -14,7 +19,10 @@ const Cta = () => {
           <h1 className="text-3xl max-w-4xl leading-none font-mono">
             Unlock your potential with skills that thrill! 🌟
           </h1>
-          <button className=" flex items-center gap-3 px-10 py-4 rounded-lg bg-gradient-to-r from-purple-500  to-blue-500 text-white text-lg font-semibold">
+          <button
+            onClick={() => setshowmodal(true)}
+            className=" flex items-center gap-3 px-10 py-4 rounded-lg bg-gradient-to-r from-purple-500  to-blue-500 text-white text-lg font-semibold"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -33,6 +41,7 @@ const Cta = () => {
           </button>
         </div>
       </div>
+      {showModal && <ContactForm closeModal={closeModal} />}
     </div>
   );
 };

@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import SingleCourse from './components/SingleCourse';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AboutUs from './pages/AboutUs';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -15,10 +17,12 @@ function App() {
         <Navbar />
         <div className="bg-gray-50 ">
           <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-            <Route path="/courses" element={<Courses />}></Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/courses" element={<Courses />} />
             <Route path="/course/:id" element={<SingleCourse />} />
+            <Route path="*" element={<NotFoundPage />} />{' '}
           </Routes>
         </div>
         <Footer />

@@ -132,13 +132,13 @@ const SingleCourse = () => {
                   </p>
                 </div>
                 {/* Course Highlights */}
-                <div className="bg-white rounded-xl shadow-2xl p-5 my-5">
+                <div className="bg-white rounded-xl text-start shadow-2xl p-5 my-5">
                   <h1 className="text-indigo-500 text-3xl">
                     Course Highlights
                   </h1>
 
                   <ul className="my-5">
-                    <li className="flex gap-5 my-5 text-base ">
+                    <li className="flex gap-5 my-5 text-base  ">
                       {' '}
                       <img src={Star} alt="Course Highlights" />
                       100% live virtual classes

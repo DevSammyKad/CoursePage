@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../assets/images/banner-01.webp';
 import CourseCards from './CourseCards';
 import CourseData from '../json/course.json';
+import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <div className="bg-gradient-to-b from-white to-indigo-100 pb-20 relative">
@@ -51,9 +52,11 @@ const Hero = () => {
               awesomeness of learning on our turf – where skills
               meet good vibes!!
             </h3>
-            <button className="px-6 py-4 text-white text-lg font-semibold bg-blue-500 hover:bg-purple-500 rounded-xl ">
-              View All Courses
-            </button>
+            <Link to={'/courses'}>
+              <button className="px-6 py-4 text-white text-lg font-semibold bg-blue-500 hover:bg-purple-500 rounded-xl ">
+                View All Courses
+              </button>
+            </Link>
           </div>
           {/* <div className="col-span-1 relative">
             <div className="absolute top-28 z- left-2 max-lg:hidden">

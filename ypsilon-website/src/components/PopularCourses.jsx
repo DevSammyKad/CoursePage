@@ -5,6 +5,7 @@ import coursePoster2 from '../assets/images/course-02.webp';
 import Avatar1 from '../assets/images/Avatar1.png';
 import PopularCourseData from '../json/popularCourseThreeData.json';
 import FiveStars from './FiveStars';
+import courseData from '../json/course.json';
 import AllCourses from '../components/AllCourses';
 const PopularCourses = () => {
   return (
@@ -25,8 +26,8 @@ const PopularCourses = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 my-10">
-        {PopularCourseData.map((item, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto my-10">
+        {courseData.map((item, index) => (
           <div
             key={index}
             className="bg-white mt-4 px-8 pb-3  shadow-md rounded-2xl"
@@ -87,7 +88,7 @@ const PopularCourses = () => {
               </p>
             </div>
             {/* Instructor */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center justify-between space-x-2">
               <img
                 src={item.InstructorImage}
                 className="rounded-full w-10 

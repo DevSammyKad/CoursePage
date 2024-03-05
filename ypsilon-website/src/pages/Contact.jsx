@@ -1,5 +1,7 @@
 import React from 'react';
 import react from '../assets/react.svg';
+import ContactForm from '../components/ContactForm';
+import Cta from '../components/Cta';
 
 const Contact = () => {
   return (
@@ -11,10 +13,10 @@ const Contact = () => {
               Contact
             </h5>
           </div>
-          <h1 className="text-center mx-auto leading-tight text-black text-[53px] w-[40%]">
+          <h1 className="text-center mx-auto leading-tight text-black text-5xl max-w-lg">
             YPSILON Course Contact can join with us.
           </h1>
-          <div className="grid grid-cols-3 space-x-20 mt-20 ">
+          <div className="grid grid-cols-1 lg:grid-cols-3 space-y-10 lg:space-x-10 lg:space-y-0 mt-20 ">
             <div className=" flex justify-start items-center bg-white shadow-xl rounded-2xl p-10 space-x-10 ">
               <div className="">
                 <svg
@@ -34,8 +36,8 @@ const Contact = () => {
               </div>
               <div className="flex flex-col">
                 <h5 className="font-bold mb-2 text-lg">Contact Number </h5>
-                <a href="tel:8459324821">+91 8459324821</a>
-                <a href="tel:8459324821">+91 8459324821</a>
+                <a href="tel:8788541747">+91 8788541747</a>
+                <a href="tel:8788541747">+91 8788541747</a>
               </div>
             </div>
             <div className=" flex justify-start items-center bg-white shadow-xl rounded-2xl p-10 space-x-10 ">
@@ -57,8 +59,13 @@ const Contact = () => {
               </div>
               <div className="flex flex-col">
                 <h5 className="font-bold mb-2 text-lg">Email Address </h5>
-                <a href="tel:8459324821">admin@gmail.com</a>
-                <a href="tel:8459324821">example@gmail.com</a>
+                <a
+                  href="mailto:
+anjali.jagtap@ymail.com"
+                >
+                  anjali.jagtap@ymail.com
+                </a>
+                <a href="mailto:ypslion@gmail.com">ypslion@gmail.com</a>
               </div>
             </div>
             <div className=" flex justify-start items-center bg-white shadow-xl rounded-2xl p-10 space-x-10 ">
@@ -103,6 +110,7 @@ const Contact = () => {
           ></iframe>
         </div>
       </div>
+      <Cta />
     </>
   );
 };
