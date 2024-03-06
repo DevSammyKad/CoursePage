@@ -24,7 +24,6 @@ const WhyUs = () => {
             <div className="bg-white rounded-xl shadow-xl text-center px-5 py-5">
               <img
                 src={exam}
-                cov
                 alt=""
                 width={120}
                 className="text-center mx-auto "

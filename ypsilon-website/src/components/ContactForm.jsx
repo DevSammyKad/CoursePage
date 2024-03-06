@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../Form.css';
+import toast, { Toaster } from 'react-hot-toast';
 
 const ContactForm = ({ closeModal }) => {
   useEffect(() => {
@@ -12,11 +13,13 @@ const ContactForm = ({ closeModal }) => {
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then((response) => {
           if (response.ok) {
-            console.log('Form submitted successfully');
-            alert('Form submitted successfully');
+            // alert('Form submitted successfully');
             closeModal();
+            toast.success('Form submitted successfully');
+            console.log('Form submitted successfully');
             // You can redirect or show a success message here if needed.
           } else {
+            toast.error('Error submitting the form');
             console.error('Error submitting the form');
           }
         })
@@ -204,6 +207,7 @@ const ContactForm = ({ closeModal }) => {
             </button>
           </form>
         </div>
+        <Toaster />
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import cartoon from '../assets/images/cartoon.png';
 import ContactForm from './ContactForm';
+import { Toaster } from 'react-hot-toast';
 
 const Cta = () => {
   const [showModal, setshowmodal] = useState(false);
@@ -42,6 +43,7 @@ const Cta = () => {
         </div>
       </div>
       {showModal && <ContactForm closeModal={closeModal} />}
+      <Toaster />
     </div>
   );
 };

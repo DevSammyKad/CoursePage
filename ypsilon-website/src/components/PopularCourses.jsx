@@ -88,19 +88,23 @@ const PopularCourses = () => {
               </p>
             </div>
             {/* Instructor */}
-            <div className="flex items-center justify-between space-x-2">
-              <img
-                src={item.InstructorImage}
-                className="rounded-full w-10 
+            <div className="flex items-center space-x-5">
+              <div>
+                <img
+                  src={item.InstructorImage}
+                  className="rounded-full w-10 
               "
-              />
-              <p className="font-medium text-sm text-gray-500">
-                By{' '}
-                <span className="text-gray-900 text-base ">
-                  {item.Instructor}
-                </span>{' '}
-                In {item.Field}
-              </p>
+                />
+              </div>
+              <div>
+                <p className="font-medium text-sm text-gray-500">
+                  By{' '}
+                  <span className="text-gray-900 text-base ">
+                    {item.Instructor}
+                  </span>{' '}
+                  In {item.Field}
+                </p>
+              </div>
             </div>
             {/* Pricing  */}
             <div className="my-5 flex items-center justify-between">

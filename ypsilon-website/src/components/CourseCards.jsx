@@ -1,6 +1,6 @@
 import React from 'react';
 import coursePoster1 from '../assets/images/course-01.webp';
-import Avatar1 from '../assets/images/Avatar1.png';
+import Avatar2 from '../assets/images/Avatar2.png';
 import CourseData from '../json/course.json';
 import FiveStars from './FiveStars';
 import { Link } from 'react-router-dom';
@@ -15,7 +15,7 @@ const CourseCards = () => {
           <div className="bg-white mt-4 px-8 py-3  shadow-md rounded-2xl">
             <div className=" rounded-2xl ">
               {/* Image  */}
-              <img src={item.ImagePath} alt="" className="rounded-2xl mt-5" />
+              <img src={coursePoster1} alt="" className="rounded-2xl mt-5" />
             </div>
             {/* Rating  */}
             <div className="flex items-center mt-5">
@@ -69,19 +69,23 @@ const CourseCards = () => {
               </p>
             </div>
             {/* Instructor */}
-            <div className="flex items-center space-x-2">
-              <img
-                src={item.InstructorImage}
-                className="rounded-full w-10 
+            <div className="flex  items-center space-x-2">
+              <div>
+                <img
+                  src={Avatar2}
+                  className="rounded-full w-10 
               "
-              />
-              <p className="font-medium text-sm text-gray-500">
-                By{' '}
-                <span className="text-gray-900 text-base ">
-                  {item.Instructor}
-                </span>{' '}
-                In {item.Field}
-              </p>
+                />
+              </div>
+              <div>
+                <p className="font-medium text-sm text-gray-500">
+                  By{' '}
+                  <span className="text-gray-900 text-base ">
+                    {item.Instructor}
+                  </span>{' '}
+                  In {item.Field}
+                </p>
+              </div>
             </div>
             {/* Pricing  */}
             <div className="my-5 flex items-center justify-between">

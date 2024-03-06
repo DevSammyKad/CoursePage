@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Logo from '../assets/images/Logo.png';
 import { Navlinks } from '../constants/index';
 import { Link } from 'react-router-dom';
+<link
+  href="https://fonts.cdnfonts.com/css/rocket-rinder"
+  rel="stylesheet"
+></link>;
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -15,7 +19,12 @@ const Navbar = () => {
         <nav className="flex justify-between items-center w-4/5 mx-auto py-5 ">
           <div>
             {/* <img src={Logo} width={250} alt="" /> */}
-            <h1 className="text-blue-500">YPSilon</h1>
+            <h1
+              className="text-blue-500 text-center"
+              style={{ fontFamily: 'Rocket Rinder, sans-serif' }}
+            >
+              YPSILON ADVANCED SKILLS HUB <br /> (Y.A.S.H.)
+            </h1>
           </div>
 
           <div>

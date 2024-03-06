@@ -13,12 +13,12 @@ const Footer = () => {
             {/* <img src={Logo} alt="" width={250} /> */}
             <h1 className="text-blue-500">YPSilon</h1>
             <h5 className="pr-20 text-gray-500">
-              We’re always in search for talented and motivated people.Don’t be
+              We’re always in search for talented and motivated people. Don’t be
               shy introduce yourself!
             </h5>
             <div className="flex justify-start items-center">
-              <img src={Logo2} width={200} alt="" />
-              <img src={Logo} width={200} alt="" />
+              <img src={Logo2} width={200} height={100} alt="" />
+              <img src={Logo} width={200} height={100} alt="" />
             </div>
             <div>
               {/* <button className="border border-indigo-400 rounded-2xl px-6 py-4">
@@ -58,7 +58,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="text-black">Our Company</h2>
+            <h2 className="text-black text-start">Our Company</h2>
             <ul className="mt-5">
               <li className="mt-2 hover:underline-left-to-right">
                 <Link to={'/about'}>
@@ -87,7 +87,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="text-black">Get Contact</h2>
+            <h2 className="text-black text-start">Get Contact</h2>
             <ul className="mt-5 ">
               <li className="mt-1 ">
                 <a
@@ -115,12 +115,15 @@ const Footer = () => {
         </div>
 
         <hr className="mb-5" />
-        <p className="text-sm text-center">
-          Copyright © 2024{' '}
-          <a href="https://technolize.in/" className="text-blue-500">
-            Technolize Private Limited
-          </a>{' '}
-          • Powered By PRS Groups
+        <p className="text-sm text-center ">
+          Copyright © 2024 " Developed & Managed By &nbsp;
+          <a
+            href="https://technolize.in/"
+            className="text-blue-500"
+            target="_blank"
+          >
+            Technolize Private Limited"
+          </a>
         </p>
       </div>
     </>

@@ -3,12 +3,14 @@ import bg from '../assets/images/bg-image.jpg';
 import BreadCrumb from './BreadCrumb';
 import CourseData from '../json/course.json';
 import FiveStars from './FiveStars';
+import Stars from '../components/Stars';
 import courseImage from '../assets/images/course-01.webp';
 import TopSelling from '../assets/images/TopSelling.png';
 import Star from '../assets/images/star.png';
-import Avatar2 from '../assets/images/Avatar2.png';
+import Avatar2 from '../assets/images/Avatar2.jpg';
 import diploma from '../assets/images/diploma.png';
 import CourseContentAccordion from './CourseContentAccordion';
+import CourseOutlineAccordion from './CourseOutlineAccordion';
 
 const SingleCourse = () => {
   return (
@@ -25,7 +27,7 @@ const SingleCourse = () => {
         //   // height: '700px',
         // }}
         >
-          <div className=" w-4/5 mx-auto mt-20">
+          <div className=" w-4/5 mx-auto mt-20 max-xl:mt-0">
             <BreadCrumb />
           </div>
           <div className="grid grid-cols-3  w-4/5 mx-auto py-10">
@@ -56,19 +58,23 @@ const SingleCourse = () => {
                     </div>
                   </div>
                   {/* Instructor */}
-                  <div className="flex items-center space-x-2 my-10">
-                    <img
-                      src={item.InstructorImage}
-                      className="rounded-full w-10 
+                  <div className="flex items-center my-10  space-x-5">
+                    <div>
+                      <img
+                        src={item.InstructorImage}
+                        className="rounded-full w-10
               "
-                    />
-                    <p className="font-medium text-sm text-gray-500">
-                      By{' '}
-                      <span className="text-gray-900 text-base ">
-                        {item.Instructor}
-                      </span>{' '}
-                      In {item.Field}
-                    </p>
+                      />
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm text-gray-500">
+                        By{' '}
+                        <span className="text-gray-900 text-base ">
+                          {item.Instructor}
+                        </span>{' '}
+                        In {item.Field}
+                      </p>
+                    </div>
                   </div>
                   {/* Course Attribute */}
                   <div className="flex items-center space-x-5 pb-5">
@@ -122,7 +128,7 @@ const SingleCourse = () => {
                   />
                 </div>
                 {/* Course OverView */}
-                <div className="bg-white rounded-xl shadow-2xl p-5 my-5">
+                <div className="bg-white rounded-xl shadow-xl p-5 my-5">
                   <h1 className="text-indigo-500 text-3xl">Course Overview</h1>
                   <p className="font-normal text-lg text-slate-500 leading-normal my-5">
                     The programme aims to equip trainers, course creators &
@@ -132,48 +138,88 @@ const SingleCourse = () => {
                   </p>
                 </div>
                 {/* Course Highlights */}
-                <div className="bg-white rounded-xl text-start shadow-2xl p-5 my-5">
-                  <h1 className="text-indigo-500 text-3xl">
-                    Course Highlights
-                  </h1>
+                {CourseData.map((course) => (
+                  <div
+                    className="bg-white rounded-xl shadow-xl p-5 my-5"
+                    key={course.Id}
+                  >
+                    <h1 className="text-indigo-500 text-3xl">
+                      Course Highlights
+                    </h1>
+                    <ul>
+                      {course.CourseHighlights.map((highlight, index) => (
+                        <div key={index} className="flex space-x-5 my-5">
+                          <div>
+                            <img src={Star} alt="" />
+                          </div>
+                          <div>
+                            <li className="flex">{highlight.li}</li>
+                          </div>
+                        </div>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
 
-                  <ul className="my-5">
-                    <li className="flex gap-5 my-5 text-base  ">
-                      {' '}
-                      <img src={Star} alt="Course Highlights" />
-                      100% live virtual classes
-                    </li>
-                    <li className="flex gap-5 my-5 text-base ">
-                      {' '}
-                      <img src={Star} alt="Course Highlights" /> Experienced and
-                      trained faculty
-                    </li>
-                    <li className="flex gap-5 my-5 text-base ">
-                      {' '}
-                      <img src={Star} alt="Course Highlights" />
-                      30+ hours of live sessions
-                    </li>
-                    <li className="flex gap-5 my-5 text-base ">
-                      {' '}
-                      <img src={Star} alt="Course Highlights" />
-                      20+ hours projects
-                    </li>
-                    <li className="flex gap-5 my-5 text-base ">
-                      <img src={Star} alt="Course Highlights" />
-                      Completion certificate from Ypsilon Advanced Skills Hub
-                      (Accredited by N.I.S.T. and ICWA in India
-                    </li>
-                  </ul>
-                </div>
-                <div>
+                {/* What's In It for You? */}
+                {CourseData.map((course) => (
+                  <div
+                    className="bg-white rounded-xl shadow-xl p-5 my-5"
+                    key={course.Id}
+                  >
+                    <h1 className="text-indigo-500 text-3xl">
+                      What's In It for You?
+                    </h1>
+                    <ul>
+                      {course["What's In It for You?"].map((item, index) => (
+                        <div key={index} className="flex space-x-5 my-5">
+                          <div>
+                            <li className="flex">{item.list}</li>
+                          </div>
+                        </div>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+
+                {/* Who Is This Course For? */}
+                {CourseData.map((course) => (
+                  <div
+                    className="bg-white rounded-xl shadow-xl p-5 my-5"
+                    key={course.Id}
+                  >
+                    <h1 className="text-indigo-500 text-3xl">
+                      Who Is This Course For?
+                    </h1>
+                    <ul>
+                      {course['Who Is This Course For?'].map((item, index) => (
+                        <div key={index} className="flex space-x-5 my-5">
+                          <div>
+                            <Stars />
+                          </div>
+                          <div>
+                            <li className="flex">{item.list}</li>
+                          </div>
+                        </div>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+
+                {/* Course Content */}
+                {/* <div>
                   <CourseContentAccordion />
+                </div> */}
+                {/* Course Outline */}
+                <div>
+                  <CourseOutlineAccordion />
                 </div>
-                {/* Instructor */}
 
+                {/* Instructor */}
                 {CourseData.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center space-x-10 bg-white rounded-xl shadow-2xl p-5 my-5"
+                    className="flex items-center space-x-10 bg-white rounded-xl shadow-xl p-5 my-5"
                   >
                     <div>
                       <img

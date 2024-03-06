@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <div className="bg-gradient-to-b from-white to-indigo-100 pb-20 relative">
-      <div className="hidden absolute -bottom-60 left-0 w-full h-full z-20 max-lg:hidden">
+      {/* <div className="hidden absolute -bottom-60 left-0 w-full h-full z-20 max-lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -30,11 +30,11 @@ const Hero = () => {
             d="M0,32L26.7,53.3C53.3,75,107,117,160,165.3C213.3,213,267,267,320,261.3C373.3,256,427,192,480,160C533.3,128,587,128,640,112C693.3,96,747,64,800,69.3C853.3,75,907,117,960,144C1013.3,171,1067,181,1120,176C1173.3,171,1227,149,1280,165.3C1333.3,181,1387,235,1413,261.3L1440,288L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
           ></path>
         </svg>
-      </div>
+      </div> */}
       <div className="w-4/5 mx-auto relative">
         <div className="grid grid-cols-3 space-y-10 ">
           <div className="col-span-3 lg:col-span-2 ">
-            <h1 className="max-w-max text-5xl leading-none mt-40">
+            <h1 className="max-w-max text-5xl leading-none mt-40 max-xl:mt-10">
               Build The Skills <br /> To&nbsp;
               <span
                 style={{

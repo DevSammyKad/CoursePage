@@ -1,12 +1,12 @@
 [
   {
-    "Image": "src/assets/images/Avatar1.png",
+    "Image": "./src/assets/images/Avatar1.png",
     "FullName": "Michael D. Lovelady",
     "Designation": " Executive Chairman @ Google",
     "FeedBack": "The instructor's explanations were clear and easy to understand Really helped me grasp difficult concepts."
   },
   {
-    "Image": "src/assets/images/Avatar2.png",
+    "Image": "./src/assets/images/Avatar2.png",
     "FullName": "Emily K. Chang",
     "Designation": "Software Engineer @ Microsoft",
     "FeedBack": "Enjoyed the interactive sessions and hands-on exercises. Great way to learn!"
